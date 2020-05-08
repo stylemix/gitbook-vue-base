@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Resources APIs helps you to quickly build requests to specific resource via [HTTP endpoints](../http-endpoints.md). Move your logic and backend requests to dedicated classes. Keep your code clean and elegant.
+API classes helps you to quickly build requests to specific resource via [HTTP endpoints](../http-endpoints.md). Move your logic and backend requests to dedicated classes. Keep your code clean and elegant.
 
 ### Define API class
 
@@ -14,7 +14,7 @@ A good example could be authentication methods:
 ```javascript
 import { ApiBase } from 'stylemix-base' 
 
-export default class Auth extends ApiResource {
+export default class Auth extends ApiBase {
 
   /**
    * POST /login
@@ -47,7 +47,7 @@ Base.httpEndpoint('$auth', {
 ```
 {% endcode %}
 
-{% code title="Auth.js" %}
+{% code title="AuthApi.js" %}
 ```javascript
 import { ApiBase } from 'stylemix-base' 
 
